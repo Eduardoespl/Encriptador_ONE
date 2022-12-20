@@ -106,3 +106,7 @@ textarea{
 footer{
     margin-top: -28px;
 }
+
+input:read-only{
+    cursor: not-allowed;
+}
