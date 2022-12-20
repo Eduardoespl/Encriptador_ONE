@@ -11,18 +11,21 @@
 <body>
     <main>
         <div class="container">
-            <input id='text' type="text" placeholder="Ingrese el texto aquí">
-            <p class="advert">Solo letras minúsculas y sin acentos</p>
-            <button id="en" class="en">Encriptar</button>
-            <button class="des">Desencriptar</button>
-            <div class="output">
-                <img id="active_i" src="/images/no-results.png" alt="No_results" class="output-image">
-                <h2 id="active">Ningún mensaje fue encontrado</h2>
-                <p id="active_t" class="description">Ingresa el texto que desees encriptar o desencriptar</p>
-                <button id="co" class="copiar">Copiar</button>
-            </div>
+            <textarea id='text' rows="10" cols="60" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="advert">🛈 Solo letras minúsculas y sin acentos</p>
+            <button id="en">Encriptar!</button>
+            <button id="des">Desencriptar!</button>
+        </div>
+        <div class="output">
+            <img src="/images/no-results.png" alt="No_results" class="output-image active">
+            <h2 class="active">Ningún mensaje fue encontrado</h2>
+            <p class="description active">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button class="copiar">Copiar</button>
         </div>
     </main>
+    <footer>
+        <p>Copyright © 2022 | Made by Eduardo Espiritu</p>
+    </footer>
     <script src="/script.js"></script> 
 </body>
 </html>

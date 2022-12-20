@@ -1,14 +1,30 @@
-var copiar = document.getElementById("co");
-var active = document.getElementById("active");
-var activet = document.getElementById("active_t");
-var activei = document.getElementById("active_i");
+//var copiar = document.getElementById("co");
+//var active = document.getElementsByClassName("active");
 
-function mostrar(){
-    copiar.style.display = "block";
-    active.style.display = "none";
-    activet.style.display = "none";
-    activei.style.display = "none";
+
+function encriptar(){
+    var text = document.getElementById("text").value;
+    var encriptado = text
+    .replaceAll("e","enter")
+    .replaceAll("i","imes")
+    .replaceAll("a","ai")
+    .replaceAll("o","ober")
+    .replaceAll("u","ufat");
+    console.log(encriptado);
 }
 
-var button = document.querySelector("button");
-button.onclick = mostrar;
+function desencriptar(){
+    var textEncriptado = document.getElementById("text").value;
+    var desencriptado = textEncriptado
+    .replaceAll("enter","e")
+    .replaceAll("imes","i")
+    .replaceAll("ai","a")
+    .replaceAll("ober","o")
+    .replaceAll("ufat","u");
+    console.log(desencriptado);
+}
+
+var buttonEn = document.getElementById("en");
+var buttonDes = document.getElementById("des");
+buttonEn.onclick = encriptar;
+buttonDes.onclick = desencriptar;
